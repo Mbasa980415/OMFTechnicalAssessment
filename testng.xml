@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test name="OMF Loan Application Chrome">
+        <parameter name="OMFURL" value="https://www.oldmutualfinance.co.za/"/>
+        <parameter name="Browser" value="chrome"/>
+        <classes>
+            <class name="appTest.applicationTest"/>
+        </classes>
+    </test>-->
+
+    <test name="OMF Loan Application Firefox">
+        <parameter name="OMFURL" value="https://www.oldmutualfinance.co.za/"/>
+        <parameter name="Browser" value="firefox"/>
+        <classes>
+            <class name="appTest.applicationTest"/>
+        </classes>
+    </test>
+</suite>

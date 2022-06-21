@@ -27,7 +27,7 @@ public class webFunctions extends webActions
         }
         else
         {
-            node.fail("Error!! Home Page not verified",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
+            node.fail("Error! Home Page not verified",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
         }
 
     }
@@ -46,7 +46,7 @@ public class webFunctions extends webActions
         }
         else
         {
-            node.fail("Error!! loan Page not verified",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
+            node.fail("Error! loan Page not verified",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
         }
 
     }
@@ -65,7 +65,7 @@ public class webFunctions extends webActions
         }
         else
         {
-            node.fail("Error!! Personal loan calculator",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
+            node.fail("Error! Personal loan calculator",  MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot).build());
         }
 
     }
@@ -74,11 +74,13 @@ public class webFunctions extends webActions
         paths = new pageXpaths(driver);
         scrollPage(driver, "650");
         Thread.sleep(5000);
+
         /* Selecting Amount*/
         clickObject(paths.openAmountList, driver);
         clickObject(paths.clickAmountNeedBtn, driver);
         clickObject(paths.NextBtn,driver);
         Thread.sleep(2000);
+
         /*Selecting Months*/
         clickObject(paths.openAmountList, driver);
         clickObject(paths.durationNeedBtn, driver);
